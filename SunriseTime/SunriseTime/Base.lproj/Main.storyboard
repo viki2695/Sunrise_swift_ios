@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SunriseTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kn6-Qf-1wz">
+                                <rect key="frame" x="0.0" y="77" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunrise time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSu-MG-Q9U">
+                                <rect key="frame" x="0.0" y="165" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ony-Mj-LAE">
+                                <rect key="frame" x="100" y="292" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmZ-Bf-mUr">
+                                <rect key="frame" x="194" y="292" width="165" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sunrise Time"/>
+                                <connections>
+                                    <action selector="btnSunriseTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x3t-rn-RsC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXb-rz-Ex4">
+                                <rect key="frame" x="16" y="291" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sunset Time"/>
+                                <connections>
+                                    <action selector="btnSunsetTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EZG-4B-mRI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zya-BS-nMc">
+                                <rect key="frame" x="0.0" y="209" width="375" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="zya-BS-nMc" firstAttribute="leading" secondItem="HSu-MG-Q9U" secondAttribute="leading" id="2xQ-cl-nbI"/>
+                            <constraint firstItem="kn6-Qf-1wz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="95q-Di-Rhe"/>
+                            <constraint firstItem="HSu-MG-Q9U" firstAttribute="leading" secondItem="kn6-Qf-1wz" secondAttribute="leading" id="LFN-au-NUK"/>
+                            <constraint firstItem="kn6-Qf-1wz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="VUU-HQ-Jtt"/>
+                            <constraint firstItem="zya-BS-nMc" firstAttribute="trailing" secondItem="HSu-MG-Q9U" secondAttribute="trailing" id="VZr-I8-b6q"/>
+                            <constraint firstItem="HSu-MG-Q9U" firstAttribute="trailing" secondItem="kn6-Qf-1wz" secondAttribute="trailing" id="Vda-k9-jHB"/>
+                            <constraint firstItem="HSu-MG-Q9U" firstAttribute="top" secondItem="kn6-Qf-1wz" secondAttribute="bottom" constant="58" id="jGa-nS-7Jv"/>
+                            <constraint firstItem="zya-BS-nMc" firstAttribute="top" secondItem="HSu-MG-Q9U" secondAttribute="bottom" constant="23.5" id="uwW-Mg-Jo9"/>
+                            <constraint firstItem="kn6-Qf-1wz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yJ8-fb-gZn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="labSunTime" destination="HSu-MG-Q9U" id="hyp-SM-iVI"/>
+                        <outlet property="labTittle" destination="zya-BS-nMc" id="AZF-kE-5m0"/>
+                        <outlet property="txtCityName" destination="kn6-Qf-1wz" id="6jL-aw-8qc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
